@@ -1,4 +1,4 @@
-package ftag
+package tagutil
 
 import (
 	"reflect"

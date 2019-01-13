@@ -1,4 +1,4 @@
-// Package ftag provides a couple helper methods for dealing with Go's struct tags.
+// Package tagutil provides a couple helper methods for dealing with Go's struct tags.
 //
 // This package follows the convention outlined in the Go's reflect package
 // documentation at: https://golang.org/pkg/reflect/#StructTag, ie By convention,
@@ -7,7 +7,7 @@
 // Additionally the "value" can be a comma-separated list of items, in which case
 // the first item is regarded as the "main" value and all of the subsequent items
 // are considered as "options" of that pair.
-package ftag
+package tagutil
 
 import (
 	"strconv"

@@ -24,6 +24,10 @@ func (t Tag) Get(key string) string {
 	return strings.Join(t[key], ",")
 }
 
+func (t Tag) Len(key string) int {
+	return len(t[key])
+}
+
 // Contains reports whether the value associated with the given key matches
 // the provided string val.
 func (t Tag) Contains(key, val string) bool {
@@ -46,6 +50,13 @@ func (t Tag) HasOption(key, val string) bool {
 		}
 	}
 	return false
+}
+
+func (t Tag) NumOptions(key string) int {
+	if len(t[key]) > 0 {
+		return len(t[key][1:])
+	}
+	return 0
 }
 
 // First returns the "main" value associated with key in the Tag.

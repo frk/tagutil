@@ -21,6 +21,9 @@ func TestNew(t *testing.T) {
 	}, {
 		tag:  `json:",inline,omitempty"`,
 		want: Tag{"json": {"", "inline", "omitempty"}},
+	}, {
+		tag:  `json:""`,
+		want: Tag{"json": {""}},
 	}}
 
 	for _, tt := range tests {

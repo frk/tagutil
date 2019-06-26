@@ -1,7 +1,5 @@
 ### tagutil
 
-
-
 Package `tagutil` provides a couple helper methods for dealing with Go's struct tags.
 
 This package follows the convention outlined in the Go's reflect package

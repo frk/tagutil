@@ -24,6 +24,9 @@ func TestNew(t *testing.T) {
 	}, {
 		tag:  `json:""`,
 		want: Tag{"json": {""}},
+	}, {
+		tag:  `rx:"^\"$"`,
+		want: Tag{"rx": {"^\"$"}},
 	}}
 
 	for _, tt := range tests {
